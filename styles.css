@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Light gray background */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(104,35,193,1) 0%, rgba(241,59,219,1) 50%, rgba(104,35,193,1) 100%);; /* Dark purple */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #d8b452; /* Gold */
+}
+
+.hero {
+    background-image: url('https://i.pinimg.com/originals/e9/ae/c3/e9aec3db9d45ced0699b0b0143f7bc55.jpg'); /* Add your colorful background image here */
+    background-size: cover;
+    color: brown;
+    padding: 200px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(0, 0, 0, 0.5); */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-button {
+    background-color: #d8b452; /* Gold */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c6a049; /* Darker gold */
+}
+
+.about, .products, .testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about h2, .products h2, .testimonials h2 {
+    color:  #d417d7; /* Dark purple */
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.products h2 {
+    text-align: center;
+}
+
+.product-card {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    color:  #d417d7; /* Dark purple */
+}
+
+img{
+    height: 20vh;
+}
+
+.buy-button {
+    background-color: #d8b452; /* Gold */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #c6a049; /* Darker gold */
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-left: 4px solid  #d417d7;
+    max-width: 600px;
+}
+
+.contact {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    color: #d417d7; /* Dark purple */
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333;
+}
+
+
+footer {
+    background-color:  #d417d7; /* Dark purple */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
